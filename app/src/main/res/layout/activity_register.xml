@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation= "vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Register an YeSplit account."
+            android:textColor="@color/MediumAquamarine"
+            android:layout_marginBottom="30dp"
+
+            android:id="@+id/textView7" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:text="Username"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/txtRegUsername" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button"
+
+        android:id="@+id/edRegUsername" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:textColor="@color/White"
+            android:text="Email Address"
+            android:id="@+id/txtRegTelephone" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/button"
+            android:layout_marginBottom="16dp"
+
+            android:id="@+id/edRegEmail" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="Password"
+            android:textColor="@color/White"
+            android:id="@+id/txtRegPassword" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:inputType="textPassword"
+            android:background="@drawable/button"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/edRegPass" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/White"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="Retype Password"
+            android:id="@+id/txtRegRetype" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            android:inputType="textPassword"
+            android:background="@drawable/button"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/edRegRetype" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textColor="@color/White"
+        android:text="Tick to agree Term &amp; conditions"
+        android:id="@+id/checkBox"
+        android:layout_marginBottom="15dp"
+        android:checked="false" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation= "horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:id="@+id/bt_regester"
+                 />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+

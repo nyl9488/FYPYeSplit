@@ -1,0 +1,107 @@
+<FrameLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/cardview_dark_background"
+    >
+    <LinearLayout android:layout_width="fill_parent"
+        android:id="@+id/formlogin_layout1"
+        android:layout_height="fill_parent" android:gravity="center"
+        android:orientation="vertical" android:visibility="gone">
+        <ProgressBar android:id="@+id/formlogin_pb"
+            android:layout_width="wrap_content" style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:layout_height="wrap_content" />
+        <TextView android:text="Loading..." android:layout_marginTop="10.0dip"
+
+            android:textColor="@color/White" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/formlogin_tv_login" />
+    </LinearLayout>
+    <LinearLayout  android:orientation= "vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/formlogin_layout2"
+       >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Log in to YeSplit."
+        android:textColor="@color/MediumAquamarine"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/textView7" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Username"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:textColor="@color/White"
+    android:id="@+id/txtLogTel" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+
+        android:background="@drawable/button"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/editLogTel" />
+
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:text="Password"
+    android:textColor="@color/White"
+    android:id="@+id/txtLogPass" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:inputType="textPassword"
+    android:background="@drawable/button"
+
+    android:layout_marginBottom="16dp"
+    android:id="@+id/editLogPass" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:id="@+id/forgetPass"
+        android:clickable="true"
+        android:textColor="@color/White"
+        android:onClick="onForgetClick"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="right"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation= "vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter"
+            android:id="@+id/btnLogin"
+             />
+
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

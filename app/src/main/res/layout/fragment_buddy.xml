@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".MainActivity">
+
+
+
+
+
+    <ListView
+        android:id="@+id/list_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        >
+    </ListView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+
+        android:id="@+id/frameLayout">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/FAB_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:onClick="addContactOnClick"
+            android:src="@drawable/ic_addcontact"
+            android:layout_gravity="right|bottom"
+            app:borderWidth="0dp"
+            app:rippleColor="#ffffff"
+            app:elevation="4dp"
+            />
+
+
+    </FrameLayout>
+</RelativeLayout>
+
+
+
+

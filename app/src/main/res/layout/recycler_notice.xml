@@ -1,0 +1,41 @@
+<android.support.v7.widget.CardView
+    android:id="@+id/cvSingleUser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="5dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/ivProfilePic"
+                android:src="@drawable/info256"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/titleNotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@id/ivProfilePic" />
+
+            <TextView
+                android:id="@+id/typenotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleNotice"
+                android:layout_toRightOf="@id/ivProfilePic" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+

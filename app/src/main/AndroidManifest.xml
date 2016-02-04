@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yloon.fypandroidapp"
+    android:versionCode="1"
+    android:versionName="V1.0">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_mylauncher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.SplashScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="123" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragment.viewPager"
+            android:label="Notice" />
+        <activity
+            android:name=".view.ForgetPassword_Activity"
+            android:label="@string/title_activity_forget_password">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".view.inviteContact_Activity"
+            android:label="Invite from your Contacts">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fragment.viewPager" />
+        </activity>
+        <activity android:name=".view.RegisterActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.LoginActivity" />
+        </activity>
+        <activity android:name=".view.MainScreen" />
+        <activity
+            android:name=".view.Add_group_Activity"
+            android:label="Add a Shared Group"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fragment.viewPager" />
+        </activity>
+        <activity
+            android:name=".view.About_Activity"
+            android:label="About">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fragment.viewPager" />
+        </activity>
+        <activity android:name=".view.GroupInfoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fragment.viewPager" />
+        </activity>
+        <activity
+            android:name=".view.SettingsActivity"
+            android:label="@string/title_activity_settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fragment.viewPager" />
+        </activity>
+        <activity
+            android:name=".view.add_chatRoom_Activity"
+            android:label="Add a Single Chat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fragment.viewPager" />
+        </activity>
+        <activity android:name=".view.SingleChat_activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fragment.viewPager" />
+        </activity>
+        <activity
+            android:name=".view.ExpensesActivity"
+            android:label="Expenses Details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.GroupInfoActivity" />
+        </activity>
+
+        <activity
+            android:name=".view.AddBillActivity"
+            android:label="Add Bill"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.GroupInfoActivity" />
+        </activity>
+        <activity
+            android:name=".view.GroupProfile"
+            android:label="Group Details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.GroupInfoActivity" />
+        </activity>
+        <activity
+            android:name=".view.EditGroup"
+            android:label="Edit Group"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.GroupProfile" />
+        </activity>
+        <activity
+            android:name=".view.EditBill"
+            android:label="Edit Bill">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.ExpensesActivity" />
+            />
+        </activity>
+        <activity
+            android:name=".view.Feedback"
+            android:label="Feedback">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fragment.viewPager" />
+            />
+        </activity>
+        <activity android:name=".ChangePassword"  android:label="Change Password">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.SettingsActivity" />
+
+        </activity>
+        <activity
+            android:name=".Calculator"
+            android:label="Calculator" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fragment.viewPager" />
+
+        </activity>
+
+        <activity
+            android:name=".view.MultiChatRoom"
+            android:label="Multi Chat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fragment.viewPager" />
+        </activity>
+        <activity
+            android:name=".Card"
+            android:label="Identity Card">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fragment.viewPager" />
+
+        </activity>
+
+
+    </application>
+
+</manifest>

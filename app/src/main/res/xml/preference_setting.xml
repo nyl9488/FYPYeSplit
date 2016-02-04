@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+     <PreferenceCategory android:title="General">
+
+            <SwitchPreference
+                 android:key="my_gps_satellite_setting"
+                 android:title="Always Send Notification"
+                 />
+
+         <VolumePreference
+             android:key="set_sound"
+             android:title="Sound"
+             />
+
+         <SwitchPreference
+             android:key="my_wireless_network"
+             android:title="Vibration"
+             />
+         </PreferenceCategory>
+         <PreferenceCategory android:title="My Account">
+             <Preference
+
+                 android:key="set_image"
+                 android:layout="@layout/custom" />
+
+             <EditTextPreference
+                 android:key="my_individual_name"
+                 android:title="Nickname"
+                 android:summary="Please enter your full name"
+                 />
+
+         </PreferenceCategory>
+
+
+
+        <PreferenceScreen
+            android:key="foo_bar_pref"
+            android:title="Change Password"
+            >
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="set_logout"
+            android:title="Log out"
+            >
+        </PreferenceScreen>
+
+
+
+     </PreferenceScreen>

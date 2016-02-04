@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.GroupInfoActivity">
+
+    <item android:id="@+id/action_groupinfo"   android:icon="@drawable/ic_groupinfo" android:title="Group Info"
+        app:showAsAction="ifRoom|withText" />
+
+    <item android:id="@+id/action_addbill"
+        android:title="Add Bill"
+        android:icon="@drawable/ic_addbill"
+        app:showAsAction="ifRoom|withText" />
+
+
+
+
+</menu>
